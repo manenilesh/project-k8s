@@ -20,7 +20,9 @@ def home():
         redis_client.incr("hits")
         hits = redis_client.get("hits")
         return jsonify({
-            "message": "Flask app is running successfully",
+            # "message": "Flask app is running successfully",
+            "message": "We are Sucessfull",
+
             "redis_status": "connected",
             "hits": hits,
             "pod_name": socket.gethostname()
