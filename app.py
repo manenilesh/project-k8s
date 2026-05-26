@@ -21,7 +21,7 @@ def home():
         hits = redis_client.get("hits")
         return jsonify({
             # "message": "Flask app is running successfully",
-            "message": "We are Sucessfull",
+            "message": "We are Sucessfully Done It",
 
             "redis_status": "connected",
             "hits": hits,
